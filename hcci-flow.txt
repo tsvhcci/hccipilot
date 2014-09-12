@@ -1,0 +1,16 @@
+1.       User types into search text box a “treatment or condition” and it is integrate with Solr to do type-ahead and matching
+
+2.       User selects a Treatement or Condition
+
+3.       Call is made to “carebundle” API with (treatment name? or carebundlecode?) to return “CB1.json” those carebundles (ONLY) that match (no Ave costs, etc)
+
+4.       Display on UI the list of matching Care Bundles
+
+5.       User selects a Care Bundle
+
+6.       Call is made to “carebundlecosts” API  with carebundlecode and geo_zip to return “CBCS1.json” the carebundles with Avg costs for the zip code, and the steps for that specific carebundle
+
+7.       Display on UI the carebundle and carebundlecosts from CBCS1.jon
+
+8.       Also, links to static content can be displayed and clicked
+
